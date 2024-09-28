@@ -56,7 +56,6 @@ plt.xlabel('X')
 plt.ylabel('y')
 plt.legend()
 plt.show()
-
 ```
 
 - 結果：
@@ -64,6 +63,67 @@ plt.show()
 ![2024-09-28_123858](https://github.com/user-attachments/assets/73eba410-6f37-487d-b9a1-55f45eb1e5b0)
 
 
+## 第二版程式
+
+- ChatGPT：
+![2024-09-28_122617](https://github.com/user-attachments/assets/183b09d5-7afc-4905-a959-323d17752028)
+
+- 程式碼：
+
+```python
+# Step 1: Import necessary libraries
+import numpy as np
+import pandas as pd
+import streamlit as st
+from sklearn.linear_model import LinearRegression
+from sklearn.metrics import mean_squared_error
+
+# Step 2: Title and description
+st.title("Simple Linear Regression App")
+st.write("""
+This app performs a simple linear regression on generated data.
+""")
+
+# Step 3: Generate random data
+np.random.seed(42)
+X = np.random.rand(100, 1) * 10  # Random data for X
+y = 3 * X + 4 + np.random.randn(100, 1) * 2  # Linear relationship with noise
+
+# Step 4: Fit the Linear Regression model
+model = LinearRegression()
+model.fit(X, y)
+y_pred = model.predict(X)
+
+# Step 5: Calculate metrics
+mse = mean_squared_error(y, y_pred)
+r_squared = model.score(X, y)
+
+# Step 6: Display metrics
+st.subheader("Model Performance Metrics")
+st.write(f"Mean Squared Error (MSE): {mse:.2f}")
+st.write(f"R-squared: {r_squared:.2f}")
+
+# Step 7: Create a DataFrame for visualization
+data = pd.DataFrame({
+    'X': X.flatten(),
+    'Actual y': y.flatten(),
+    'Predicted y': y_pred.flatten()
+})
+
+# Step 8: Plot the data using Streamlit's chart functionality
+st.subheader("Data Visualization")
+st.write("Below is a scatter plot of the actual data and a line plot of the predicted data:")
+
+# Streamlit's line_chart can be used for quick visualization
+st.line_chart(data[['X', 'Actual y', 'Predicted y']].set_index('X'))
+
+# Optional: Use Streamlit's data display
+st.write("Here is a preview of the dataset:")
+st.dataframe(data.head())
+```
+
+- 結果：
+![2024-09-28_124944](https://github.com/user-attachments/assets/8d00a93a-41dd-43d0-a485-0a4015b94871)
 
 
 
