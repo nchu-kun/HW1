@@ -54,6 +54,11 @@ plt.legend()
 plt.show()
 
 ```
+![2024-09-28_123858](https://github.com/user-attachments/assets/73eba410-6f37-487d-b9a1-55f45eb1e5b0)
+
+
+
+
 
 ## 特點
 
