@@ -214,18 +214,3 @@ st.dataframe(data.head())
 - 演示結果：
   
 ![e5b29c28-5024-45ff-bddd-c4777edfea15](https://github.com/user-attachments/assets/f5e98cef-a4ed-4b7a-a2c2-b6d9a41dc6bd)
-
-  
-
-## 特點
-
-- 功能1：簡要描述
-- 功能2：簡要描述
-- 功能3：簡要描述
-
-## 安裝
-
-### 使用 Git 克隆
-
-```bash
-git clone https://github.com/你的用戶名/專案名稱.git
