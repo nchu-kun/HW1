@@ -13,9 +13,13 @@
 ## 部署：
 - 展示結果，包括生成的數據集和模型的預測結果。
 
-## 過程步驟
+## 第一版程式
+
+- ChatGPT：
 
 ![2024-09-28_122249](https://github.com/user-attachments/assets/9f9df792-55cc-4f28-a37c-e26300f9891a)
+
+- 程式碼：
 
 ```python
 # Step 1: Import necessary libraries
@@ -54,6 +58,9 @@ plt.legend()
 plt.show()
 
 ```
+
+- 結果：
+
 ![2024-09-28_123858](https://github.com/user-attachments/assets/73eba410-6f37-487d-b9a1-55f45eb1e5b0)
 
 
