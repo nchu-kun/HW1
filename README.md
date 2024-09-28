@@ -1,5 +1,7 @@
 # HW1:Linear regression
 
+![e5b29c28-5024-45ff-bddd-c4777edfea15](https://github.com/user-attachments/assets/f5e98cef-a4ed-4b7a-a2c2-b6d9a41dc6bd)
+
 ## 業務理解：
 - 定義我們要建立線性迴歸模型來預測數據的關係，並簡要介紹該模型的應用。
 ## 數據理解：
@@ -66,6 +68,7 @@ plt.show()
 ## 第二版程式
 
 - ChatGPT：
+  
 ![2024-09-28_122617](https://github.com/user-attachments/assets/183b09d5-7afc-4905-a959-323d17752028)
 
 - 程式碼：
@@ -123,6 +126,7 @@ st.dataframe(data.head())
 ```
 
 - 演示結果：
+  
 ![2024-09-28_124944](https://github.com/user-attachments/assets/8d00a93a-41dd-43d0-a485-0a4015b94871)
 
 
@@ -130,6 +134,7 @@ st.dataframe(data.head())
 ## 最終版程式
 
 - ChatGPT：
+  
 ![2024-09-28_122711](https://github.com/user-attachments/assets/0d17fd60-9991-4cff-9570-c9c42a61ef6a)
 
 
@@ -205,6 +210,7 @@ st.dataframe(data.head())
 ```
 
 - 演示結果：
+  
 ![e5b29c28-5024-45ff-bddd-c4777edfea15](https://github.com/user-attachments/assets/f5e98cef-a4ed-4b7a-a2c2-b6d9a41dc6bd)
 
   
