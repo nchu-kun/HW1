@@ -17,7 +17,7 @@
 
 ![2024-09-28_122249](https://github.com/user-attachments/assets/9f9df792-55cc-4f28-a37c-e26300f9891a)
 
-```bash
+```python
 # Step 1: Import necessary libraries
 import numpy as np
 import pandas as pd
@@ -52,6 +52,8 @@ plt.xlabel('X')
 plt.ylabel('y')
 plt.legend()
 plt.show()
+
+```
 
 ## 特點
 
