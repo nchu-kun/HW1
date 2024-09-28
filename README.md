@@ -17,6 +17,41 @@
 
 ![2024-09-28_122249](https://github.com/user-attachments/assets/9f9df792-55cc-4f28-a37c-e26300f9891a)
 
+```bash
+# Step 1: Import necessary libraries
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+from sklearn.linear_model import LinearRegression
+from sklearn.metrics import mean_squared_error
+
+# Step 2: Generate some random data (or load your data)
+# For simplicity, let's assume a linear relationship: y = 3x + 4 + noise
+np.random.seed(42)
+X = np.random.rand(100, 1) * 10  # 100 random points for X between 0 and 10
+y = 3 * X + 4 + np.random.randn(100, 1) * 2  # Adding some noise
+
+# Step 3: Fit a linear regression model
+model = LinearRegression()
+model.fit(X, y)
+
+# Step 4: Make predictions
+y_pred = model.predict(X)
+
+# Step 5: Evaluate the model
+mse = mean_squared_error(y, y_pred)
+r_squared = model.score(X, y)
+
+print(f"Mean Squared Error: {mse}")
+print(f"R-squared: {r_squared}")
+
+# Optional: Plot the data and the regression line
+plt.scatter(X, y, color='blue', label='Actual data')
+plt.plot(X, y_pred, color='red', label='Regression line')
+plt.xlabel('X')
+plt.ylabel('y')
+plt.legend()
+plt.show()
 
 ## 特點
 
