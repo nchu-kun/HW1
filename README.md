@@ -4,17 +4,17 @@
 
 ![e5b29c28-5024-45ff-bddd-c4777edfea15](https://github.com/user-attachments/assets/f5e98cef-a4ed-4b7a-a2c2-b6d9a41dc6bd)
 
-## 業務理解：
+## Business Understanding：
 - 定義我們要建立線性迴歸模型來預測數據的關係，並簡要介紹該模型的應用。
-## 數據理解：
+## Data Understanding：
 - 用戶可以動態設置數據的斜率、噪音比例、和數據點數量，並且系統會生成對應的數據集。
-## 數據準備：
+## Data Preparation：
 - 將數據集分為訓練集和測試集，以便進行模型訓練和評估。
-## 建模：
+## Modeling：
 - 基於訓練數據使用 LinearRegression 模型來進行線性迴歸分析。
-## 評估：
+## Evaluation：
 - 計算並顯示模型的訓練和測試集上的均方誤差（MSE）和決定係數（R-squared）。
-## 部署：
+## Deployment：
 - 展示結果，包括生成的數據集和模型的預測結果。
 
 ## 第一版程式
